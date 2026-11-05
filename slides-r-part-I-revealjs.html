@@ -7,17 +7,17 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
 <link href="site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.19">
+  <meta name="generator" content="quarto-1.11.9">
 
   <meta name="author" content="Caterina Luz Sanchez Steinhagen, David Rieger and Elizabeth Waterfield">
   <meta name="dcterms.date" content="2026-05-11">
   <title>Introduction to R: Part I</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
@@ -38,74 +38,8 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2801d109f9c864a5074d1f05d189f622.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-37be6a4c19b64bd592206557d23a80ab.css">
   <link rel="stylesheet" href="assets/slides-custom.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -614,9 +548,6 @@ Take a minute to try these out.</p>
 <li><p>You can also add <strong>comments</strong> or <strong>notes</strong> to your code by using <code>#</code></p></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="co"># Here is an example of using a comment</span></span>
-<span id="cb1-2"><a aria-label="2"></a><span class="co"># sum up two numbers</span></span>
-<span id="cb1-3"><a aria-label="3"></a><span class="dv">4</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 9</code></pre>
 </div>
@@ -702,9 +633,6 @@ It’s important to save your script early and in an organised folder, so you do
 <li><label><input type="checkbox">Create a new R script in RStudio</label></li>
 <li><label><input type="checkbox">Copy the comment below and add it to your empty R script</label></li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="co"># This is my practice R Script</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <ul class="task-list">
 <li><label><input type="checkbox">Save it to the folder on your device</label></li>
 </ul>
@@ -731,13 +659,9 @@ It’s important to save your script early and in an organised folder, so you do
 <li><p>Check if a number is <strong>larger or smaller</strong> than another number</p></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="co"># Example 1:</span></span>
-<span id="cb4-2"><a aria-label="2"></a><span class="dv">49</span> <span class="sc">==</span> <span class="dv">50</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="co"># Example 2:</span></span>
-<span id="cb6-2"><a aria-label="2"></a><span class="dv">49</span> <span class="sc">&lt;</span> <span class="dv">50</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
@@ -833,13 +757,6 @@ You don’t need to memorise all of these right now — this is just to familiar
 <ul class="task-list">
 <li><label><input type="checkbox">Express the following statements in words and evaluate whether they are <code>TRUE</code> or <code>FALSE</code>.</label></li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a>(<span class="dv">36</span> <span class="sc">+</span> <span class="dv">5</span>) <span class="sc">&gt;</span> <span class="dv">40</span></span>
-<span id="cb8-2"><a aria-label="2"></a></span>
-<span id="cb8-3"><a aria-label="3"></a>(<span class="dv">4</span> <span class="sc">==</span> <span class="dv">5</span>) <span class="sc">|</span> (<span class="dv">25</span> <span class="sc">&gt;</span> <span class="dv">17</span>)</span>
-<span id="cb8-4"><a aria-label="4"></a></span>
-<span id="cb8-5"><a aria-label="5"></a>(<span class="dv">5</span> <span class="sc">==</span> (<span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span>)) <span class="sc">&amp;</span> (<span class="dv">7</span> <span class="sc">&gt;=</span> <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <ul class="task-list">
 <li><label><input type="checkbox">Check your answers by copying and running the statements in <strong>your R Script</strong>.</label></li>
 </ul>
@@ -894,17 +811,6 @@ Another important type is factors. These are used for categorical data with pred
 <li>These determine <strong>how R stores</strong> and <strong>processes</strong> data</li>
 <li>Data types can show different behavior across different operations</li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a>Examples<span class="sc">:</span></span>
-<span id="cb9-2"><a aria-label="2"></a>  </span>
-<span id="cb9-3"><a aria-label="3"></a><span class="dv">5</span>        <span class="co"># number (integer)</span></span>
-<span id="cb9-4"><a aria-label="4"></a><span class="fl">3.14</span>     <span class="co"># number (numeric)</span></span>
-<span id="cb9-5"><a aria-label="5"></a></span>
-<span id="cb9-6"><a aria-label="6"></a><span class="st">"hello"</span>  <span class="co"># character</span></span>
-<span id="cb9-7"><a aria-label="7"></a><span class="fu">factor</span>(<span class="st">"brown"</span>)  <span class="co"># factor</span></span>
-<span id="cb9-8"><a aria-label="8"></a></span>
-<span id="cb9-9"><a aria-label="9"></a><span class="cn">TRUE</span>     <span class="co"># logical</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter notes</strong>: It is important to note that R treats each data type differently, therefore, this affects your operations. In the following examples, we see that 5 without quotation marks is a number. This means you can use it for mathematical operations and R will give you the appropriate result. So, storing data as the correct data type is important, because it determines what operations you can perform on what. Let’s look at this example closer on the next slide.</p>
 <style type="text/css">
@@ -926,7 +832,6 @@ Another important type is factors. These are used for categorical data with pred
 <li>Two numeric variables can be summed up:</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a><span class="dv">4</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 9</code></pre>
 </div>
@@ -935,7 +840,6 @@ Another important type is factors. These are used for categorical data with pred
 <li>A numeric and a character variable <em>cannot</em> be summed up:</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-label="1"></a><span class="dv">4</span> <span class="sc">+</span> <span class="st">"5"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `4 + "5"`:
 ! non-numeric argument to binary operator</code></pre>
@@ -975,13 +879,6 @@ This shows why it’s important to be aware of the data types you’re working w
 <ul>
 <li><strong>Assign a value</strong> to an object using the assignment arrow <strong><code>&lt;-</code></strong></li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb14-2"><a aria-label="2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb14-3"><a aria-label="3"></a></span>
-<span id="cb14-4"><a aria-label="4"></a><span class="co"># The example assigns the value 1 to the object "x"</span></span>
-<span id="cb14-5"><a aria-label="5"></a><span class="co"># and the value 2 to the object "y"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1067,13 +964,6 @@ As you start working more with R, this pane will become your overview of what is
 <li>Call on them and use specific objects in new operations</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a aria-label="1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb15-2"><a aria-label="2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb15-3"><a aria-label="3"></a></span>
-<span id="cb15-4"><a aria-label="4"></a><span class="co"># In a previous slide, we assigned values to the objects</span></span>
-<span id="cb15-5"><a aria-label="5"></a></span>
-<span id="cb15-6"><a aria-label="6"></a><span class="co"># Now, let's call on the objects and add them together</span></span>
-<span id="cb15-7"><a aria-label="7"></a>x <span class="sc">+</span> y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
@@ -1099,9 +989,6 @@ As you start working more with R, this pane will become your overview of what is
 <li><label><input type="checkbox">Re-assign the <code>x</code> object with the value <code>6</code>.</label></li>
 <li><label><input type="checkbox">Copy the following to your R Script:</label></li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a aria-label="1"></a>x <span class="sc">+</span> y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <ul class="task-list">
 <li><label><input type="checkbox">Run the line and see what happens.</label></li>
 </ul>
@@ -1153,10 +1040,6 @@ As you start working more with R, this pane will become your overview of what is
 </ul></li>
 <li class="fragment">Every function has a unique name, followed by parentheses <code>()</code>, such as <code>sum()</code>.</li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a aria-label="1"></a><span class="co"># Example of a function taking multiple inputs</span></span>
-<span id="cb18-2"><a aria-label="2"></a><span class="fu">sum</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Now that we know how to store data in our working directory, let’s talk about how to manipulate it. A function is basically a recipe. You put ingredients in—these are called arguments—and the function gives you a finished dish as output. It saves us from writing complex mathematical formulas from scratch.</p>
 <p><strong>Instructor Notes</strong>: Emphasize the syntax: the function name is always immediately followed by parentheses. This is how R distinguishes a function from an object.</p>
@@ -1178,19 +1061,9 @@ As you start working more with R, this pane will become your overview of what is
 <li><strong>Group items with the <code>c()</code> function</strong> to manipulate multiple items at once.</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a aria-label="1"></a><span class="co"># Example 1: Combine four numbers into one object</span></span>
-<span id="cb19-2"><a aria-label="2"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">20</span>, <span class="dv">21</span>)</span>
-<span id="cb19-3"><a aria-label="3"></a></span>
-<span id="cb19-4"><a aria-label="4"></a><span class="co"># Now we can apply a function to the entire group</span></span>
-<span id="cb19-5"><a aria-label="5"></a><span class="fu">sum</span>(age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 60</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-label="1"></a><span class="co"># Example 2: Combine four character values into one object</span></span>
-<span id="cb21-2"><a aria-label="2"></a>food <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Pizza"</span>, <span class="st">"Pasta"</span>, <span class="st">"Burger"</span>, <span class="st">"Pasta"</span>)</span>
-<span id="cb21-3"><a aria-label="3"></a></span>
-<span id="cb21-4"><a aria-label="4"></a><span class="co"># Now we can organize all the items in this object in a frequency table</span></span>
-<span id="cb21-5"><a aria-label="5"></a><span class="fu">table</span>(food)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>food
 Burger  Pasta  Pizza 
@@ -1377,13 +1250,6 @@ Burger  Pasta  Pizza
 <li>This function uses two arguments: It approximates a number (<strong>x</strong>) to a specified amount of decimal places (<strong>digits</strong>).</li>
 <li>You can provide arguments by position or by name.</li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a aria-label="1"></a><span class="co"># By position (R assumes the first number is x, the second is digits)</span></span>
-<span id="cb23-2"><a aria-label="2"></a><span class="fu">round</span>(<span class="fl">3.14159</span>, <span class="dv">2</span>)</span>
-<span id="cb23-3"><a aria-label="3"></a></span>
-<span id="cb23-4"><a aria-label="4"></a><span class="co"># By name (explicitly telling R which argument is which)</span></span>
-<span id="cb23-5"><a aria-label="5"></a><span class="fu">round</span>(<span class="at">x =</span> <span class="fl">3.14159</span>, <span class="at">digits =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1654,10 +1520,6 @@ Burger  Pasta  Pizza
 <ul>
 <li>Type a question mark <code>?</code> into the console immediately followed by the function name and press Enter.</li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a aria-label="1"></a><span class="co"># Example: Getting help with using the round() function</span></span>
-<span id="cb24-2"><a aria-label="2"></a>?round</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: There are two simple ways to access help for a function in R. The first is by using a shortcut in the Console. Simply type a question mark (?) immediately before the function name without parentheses and press Enter. For example, typing <code>?round</code> opens the help page for the <code>round()</code> function, where you can find information about what it does, its arguments, and examples of how to use it.</p>
 <p><strong>Instructor Notes</strong>: Emphasize that the syntax matters. The question mark (?) must come before the function name, and parentheses should not be included. For example, <code>?round</code> is correct, whereas <code>?round()</code> is not. Encourage students to use this frequently whenever they are unsure how a function works.</p>
@@ -1745,9 +1607,6 @@ Burger  Pasta  Pizza
 <li><label><input type="checkbox">Look at the <strong>Usage</strong> and <strong>Arguments</strong> sections in the documentation that opens in the bottom right pane to see which inputs the function accepts.</label></li>
 <li><label><input type="checkbox">Put the following as the input for the function:</label></li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb25-1"><a aria-label="1"></a>c("Tim", "Tom", "Anna", "Pizza", "Burger", "Pasta")</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <ul class="task-list">
 <li><label><input type="checkbox">Read the <strong>Arguments</strong> to figure out what must be included to put the words in <em>reverse alphabetical</em> order</label></li>
 </ul>
@@ -1822,9 +1681,6 @@ Burger  Pasta  Pizza
 <li>Useful for storing scores, ages, measurements, names, and more</li>
 </ul>
 <p>Example:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-label="1"></a>scores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">75</span>, <span class="dv">82</span>, <span class="dv">91</span>, <span class="dv">68</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1876,11 +1732,6 @@ Burger  Pasta  Pizza
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Let’s try making some vectors of our own using both numerical and word data types. But remember, for each vector, just use one datatype. At the end of this exercise, you should have two separate vectors each assigned to a different object.</p>
 <p><strong>Instructor Notes</strong>: Here are the solutions:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">20</span>, <span class="dv">21</span>)</span>
-<span id="cb27-2"><a aria-label="2"></a>name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Tim"</span>, <span class="st">"Tom"</span>, <span class="st">"Anna"</span>)</span>
-<span id="cb27-3"><a aria-label="3"></a>food <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Pizza"</span>, <span class="st">"Burger"</span>, <span class="st">"Pasta"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <p>Though it is added as a callout-tip, still be mindful that a common mistake is forgetting to wrap the character and word data in quotation marks. This will lead to an error.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1902,9 +1753,6 @@ Burger  Pasta  Pizza
 <li><em>But</em>, unlike vectors, it can contain <strong>different data types</strong> (e.g., numeric, character…)</li>
 </ul>
 <p>Example for a list:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-label="1"></a>student <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">"Alex"</span>, <span class="dv">21</span>, <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <aside class="notes">
 <p><strong>Presenter Notes</strong>: Unlike vectors, lists can contain different types of information. For example, text, numbers, and logical values can all be stored together. We won’t use lists much in this introductory session, but it’s useful to know they exist.</p>
 <p><strong>Instructor Notes</strong>: Since they are quite similar, it can be useful here to note that both lists and vectors group together pieces of information but the difference is that lists can contain different datatypes.</p>
@@ -1992,9 +1840,6 @@ Burger  Pasta  Pizza
 <ul class="task-list">
 <li><label><input type="checkbox">Copy the following to combine the vectors you created before into the <strong>dataframe</strong> named “<code>people_data</code>”</label></li>
 </ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a aria-label="1"></a>people_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(name, age, food)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <p><br></p>
 <ul class="task-list">
 <li><label><input type="checkbox">Call on the dataframe and observe what happens</label></li>
@@ -2039,9 +1884,6 @@ Burger  Pasta  Pizza
 <section id="indexing-vectors" class="slide level2">
 <h2>Indexing vectors</h2>
 <p>Each element in a vector has a position.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">20</span>, <span class="dv">21</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -2081,13 +1923,9 @@ Burger  Pasta  Pizza
 <li>Use <code>[ ]</code> to call on a value by its position</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a aria-label="1"></a><span class="co"># Example 1: Calling on the value in position 1</span></span>
-<span id="cb31-2"><a aria-label="2"></a>age[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 19</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a aria-label="1"></a><span class="co"># Example 2: Calling on the value in position 3</span></span>
-<span id="cb33-2"><a aria-label="2"></a>age[<span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 21</code></pre>
 </div>
@@ -2111,14 +1949,12 @@ Burger  Pasta  Pizza
 <p><strong>Selecting multiple values</strong></p>
 <p>You can retrieve <strong>more than one</strong> value at once.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a aria-label="1"></a>age[<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 19 21</code></pre>
 </div>
 </div>
 <p>You can also select a <strong>range</strong>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a aria-label="1"></a>age[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 19 20 21</code></pre>
 </div>
@@ -2148,13 +1984,9 @@ Burger  Pasta  Pizza
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a aria-label="1"></a><span class="co"># Example 1: Calling the value in row 1, column 1</span></span>
-<span id="cb39-2"><a aria-label="2"></a>people_data[<span class="dv">1</span>, <span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Tim"</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a aria-label="1"></a><span class="co"># Example 2: Calling the value in row 3, column 2</span></span>
-<span id="cb41-2"><a aria-label="2"></a>people_data[<span class="dv">3</span>, <span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 21</code></pre>
 </div>
@@ -2182,9 +2014,6 @@ Burger  Pasta  Pizza
 <li>It is easier to read than using column numbers</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a aria-label="1"></a><span class="co"># Example: Calling on the "name" column within the "people_data" data frame</span></span>
-<span id="cb43-2"><a aria-label="2"></a></span>
-<span id="cb43-3"><a aria-label="3"></a>people_data<span class="sc">$</span>name</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Tim"  "Tom"  "Anna"</code></pre>
 </div>
@@ -2207,7 +2036,6 @@ Burger  Pasta  Pizza
 <h2>Combining <code>$</code> and <code>[]</code></h2>
 <p>Look at the following example to see how <code>$</code> and <code>[ ]</code> can be used together:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a aria-label="1"></a>people_data<span class="sc">$</span>food[<span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Pasta"</code></pre>
 </div>
@@ -2473,15 +2301,12 @@ Keep this slide concise and use it as a clear closure of the R part 1 section.</
 <section id="practical-exercise-1-solutions" class="slide level2">
 <h2>Practical exercise 1: Solutions</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a aria-label="1"></a><span class="dv">12</span> <span class="sc">+</span> <span class="dv">17</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 29</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a aria-label="1"></a><span class="dv">218</span> <span class="sc">/</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 72.66667</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a aria-label="1"></a><span class="dv">357</span><span class="sc">^</span><span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 127449</code></pre>
 </div>
@@ -2503,15 +2328,12 @@ Keep this slide concise and use it as a clear closure of the R part 1 section.</
 <section id="practical-exercise-2-solutions" class="slide level2">
 <h2>Practical exercise 2: Solutions</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a aria-label="1"></a>(<span class="dv">36</span> <span class="sc">+</span> <span class="dv">5</span>) <span class="sc">&gt;</span> <span class="dv">40</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a aria-label="1"></a>(<span class="dv">4</span> <span class="sc">==</span> <span class="dv">5</span>) <span class="sc">|</span> (<span class="dv">25</span> <span class="sc">&gt;</span> <span class="dv">17</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] TRUE</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a aria-label="1"></a>(<span class="dv">5</span> <span class="sc">==</span> (<span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span>)) <span class="sc">&amp;</span> (<span class="dv">7</span> <span class="sc">&gt;=</span> <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE</code></pre>
 </div>
@@ -2533,27 +2355,10 @@ Keep this slide concise and use it as a clear closure of the R part 1 section.</
 </section>
 <section id="practical-exercise-6-7-solutions" class="slide level2">
 <h2>Practical exercise 6 &amp; 7: Solutions</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a aria-label="1"></a><span class="co"># Create a vector and assign it to "numbers"</span></span>
-<span id="cb59-2"><a aria-label="2"></a>numbers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">4.4</span>, <span class="dv">14</span>, <span class="fl">5.26</span>, <span class="dv">26</span>)</span>
-<span id="cb59-3"><a aria-label="3"></a></span>
-<span id="cb59-4"><a aria-label="4"></a><span class="co"># Try out sum(), mean(), and sd()</span></span>
-<span id="cb59-5"><a aria-label="5"></a><span class="fu">sum</span>(numbers)</span>
-<span id="cb59-6"><a aria-label="6"></a><span class="fu">mean</span>(numbers)</span>
-<span id="cb59-7"><a aria-label="7"></a><span class="fu">sd</span>(numbers)</span>
-<span id="cb59-8"><a aria-label="8"></a></span>
-<span id="cb59-9"><a aria-label="9"></a><span class="co"># Assign the number to "my_number"</span></span>
-<span id="cb59-10"><a aria-label="10"></a>my_number <span class="ot">&lt;-</span> <span class="fl">2.4637</span></span>
-<span id="cb59-11"><a aria-label="11"></a></span>
-<span id="cb59-12"><a aria-label="12"></a><span class="co"># Try out exp() and round()</span></span>
-<span id="cb59-13"><a aria-label="13"></a><span class="fu">round</span>(my_number)</span>
-<span id="cb59-14"><a aria-label="14"></a><span class="fu">round</span>(<span class="at">x =</span> my_number, <span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 </section>
 <section id="practical-exercise-8-solutions" class="slide level2">
 <h2>Practical exercise 8: Solutions</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a aria-label="1"></a><span class="fu">sort</span>(<span class="fu">c</span>(<span class="st">"Tim"</span>, <span class="st">"Tom"</span>, <span class="st">"Anna"</span>, <span class="st">"Pizza"</span>, <span class="st">"Burger"</span>, <span class="st">"Pasta"</span>), <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Tom"    "Tim"    "Pizza"  "Pasta"  "Burger" "Anna"  </code></pre>
 </div>
@@ -2561,20 +2366,10 @@ Keep this slide concise and use it as a clear closure of the R part 1 section.</
 </section>
 <section id="practical-exercise-9-solutions" class="slide level2">
 <h2>Practical exercise 9: Solutions</h2>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">20</span>, <span class="dv">21</span>)</span>
-<span id="cb62-2"><a aria-label="2"></a></span>
-<span id="cb62-3"><a aria-label="3"></a>name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Tim"</span>, <span class="st">"Tom"</span>, <span class="st">"Anna"</span>)</span>
-<span id="cb62-4"><a aria-label="4"></a></span>
-<span id="cb62-5"><a aria-label="5"></a>food <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Pizza"</span>, <span class="st">"Burger"</span>, <span class="st">"Pasta"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 </section>
 <section id="practical-exercise-10-solutions" class="slide level2">
 <h2>Practical exercise 10: Solutions</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a aria-label="1"></a>people_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(name, age, food)</span>
-<span id="cb63-2"><a aria-label="2"></a></span>
-<span id="cb63-3"><a aria-label="3"></a>people_data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  name age   food
 1  Tim  19  Pizza
@@ -2586,15 +2381,12 @@ Keep this slide concise and use it as a clear closure of the R part 1 section.</
 <section id="practical-exercise-11-solutions" class="slide level2">
 <h2>Practical exercise 11: Solutions</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a aria-label="1"></a>people_data<span class="sc">$</span>name[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Tim"</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a aria-label="1"></a>people_data<span class="sc">$</span>age[<span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 20</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a aria-label="1"></a>people_data<span class="sc">$</span>food[<span class="dv">3</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Pasta"</code></pre>
 </div>
@@ -2699,7 +2491,7 @@ Ensure the link is accessible through the course platform or slide deck.</p>
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -2987,12 +2779,13 @@ Ensure the link is accessible through the course platform or slide deck.</p>
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/slides-r-part-I\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
           // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
           for (var i=0; i<links.length; i++) {
             const link = links[i];
             if (!isInternal(link.href)) {
@@ -3001,8 +2794,69 @@ Ensure the link is accessible through the course platform or slide deck.</p>
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
+            };
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
+              }
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
           const config = {
             allowHTML: true,
@@ -3016,6 +2870,7 @@ Ensure the link is accessible through the course platform or slide deck.</p>
             interactiveBorder: 10,
             theme: 'light-border',
             placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
           };
           if (contentFn) {
             config.content = contentFn;
